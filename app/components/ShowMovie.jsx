@@ -18,14 +18,14 @@ const ShowMovie = async () => {
   return (
     <>
     <div className="container">
-        <div className="row gap-2">
+        <div className="row gap-5 ">
         {
         data.map((value,key) => (
-          <div className='card'  style={{width:"18rem"}}width="40px" key={key.id}>
+          <div className='card  mb-3'  style={{width:"18rem"}}width="40px" key={key.id}>
             <Image width="200" height="200" src={value.image} alt='images'/>
             
             <div className="card-body">
-              <Link href="./showlist">Show More</Link>
+              <Link href="./showlist" className='btn btn-success rounded-lg items-center float-end'>Show More</Link>
               
 
             </div>
