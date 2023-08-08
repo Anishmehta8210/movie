@@ -12,14 +12,15 @@ const page = async () => {
     console.log(data)
   return (
     <>
-   <div className="container">
+   
+   <div className="container mt-3">
    {
         data.map((value,key) => (
-          <div className='card mb-3'  key={key.id}>
-             <h5 className="card-header">{value.show.name}</h5>
+          <div className='card col-md-4 mb-3 col-lg-12 mt-5'  key={key.id}>
+             <h5 className="card-header display-6">{value.show.name}</h5>
             
             <div className="card-body">
-            <p className="card-text">{value.show.summary}</p>
+            <p className="card-text lead">{value.show.summary}</p>
               
 
             </div>
@@ -28,6 +29,7 @@ const page = async () => {
         ))
       }
    </div>
+   
     </>
   )
 }
